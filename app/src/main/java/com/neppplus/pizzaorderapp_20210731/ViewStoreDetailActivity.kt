@@ -2,6 +2,7 @@ package com.neppplus.pizzaorderapp_20210731
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.neppplus.pizzaorderapp_20210731.datas.Store
 import kotlinx.android.synthetic.main.activity_view_store_detail.*
@@ -18,6 +19,12 @@ class ViewStoreDetailActivity : AppCompatActivity() {
     }
 
     fun setupEvents() {
+
+        callBtn.setOnClickListener {
+
+            Toast.makeText(this, "${mStore.phoneNum}에 전화를 겁니다.", Toast.LENGTH_SHORT).show()
+
+        }
 
     }
 
