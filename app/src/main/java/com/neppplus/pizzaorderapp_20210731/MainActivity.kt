@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+//    뷰페이저를 띄우는 어댑터 - 브랜치 테스트용 주석
     lateinit var mainViewPagerAdapter: MainViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
