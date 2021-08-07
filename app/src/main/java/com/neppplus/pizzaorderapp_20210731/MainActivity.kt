@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+//        정리용 함수 들도 실제 실행
         setupEvents()
         setValues()
     }
@@ -24,9 +26,12 @@ class MainActivity : AppCompatActivity() {
     fun setValues() {
 //        화면에 데이터 (UI) 를 띄우기 위한 관련 코드 모음.
 
+
+//        뷰페이저를 띄우기 위한 어댑터 객체 / 실제연결
         mainViewPagerAdapter = MainViewPagerAdapter( supportFragmentManager )
         mainViewPager.adapter = mainViewPagerAdapter
 
+//        탭 레이아웃 세팅
         mainTabLayout.setupWithViewPager(mainViewPager)
 
     }
